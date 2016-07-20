@@ -25,9 +25,8 @@ for lsp in lsp_list:
 
 # Fill only the required fields     
 ero= [ 
-                { 'topoObjectType': 'ipv4', 'address': '10.210.15.2'},
-                { 'topoObjectType': 'ipv4', 'address': '10.210.13.2'},
-                { 'topoObjectType': 'ipv4', 'address': '10.210.17.1'}
+                { 'topoObjectType': 'ipv4', 'address': '10.210.16.1'},
+                { 'topoObjectType': 'ipv4', 'address': '10.210.17.2'}
                ]
 new_lsp = {}
 for key in ('from', 'to', 'name', 'lspIndex', 'pathType'):
