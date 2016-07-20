@@ -1,0 +1,33 @@
+Nodes and Edges are availible through the api from northstar
+Visulaize the topological maps
+
+Step 2
+iperf, video streaming, ping, 
+
+Step 3
+Manage the network (remember that the network is volitile)
+Use tools to alter the network in near-real time, to optimize your path
+ - No double links will fail, and no nodes will fail
+ - 5-6 minutes for fails to heal
+Optimizing due to changes
+ - We provide our idea of optimizing the paths
+    - Explain for each data type being sent
+
+Step 4
+Generate flows
+ - React to changes in variables
+
+
+We are running OSPF
+    - runs all the nodes and computes paths globally/
+
+
+
+
+redis
+input-bps (input bits per second) <- thing we use to check congestion
+output-bps (output bits per second) <- thing we use to check congestion
+input -pps (input packets per second) <- overhead
+output-pps (output packets per second) <- overhead
+input-bytes (lifetime bytes transfered through)
+output-bytes (lifetime bytes transfered through)
