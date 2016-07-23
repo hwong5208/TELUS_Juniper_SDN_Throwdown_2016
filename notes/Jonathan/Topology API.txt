@@ -1,0 +1,5 @@
+Topology API
+
+    - Allows for full snapshops of topology
+    Retrieves nodes & relationships
+    Retrieves path & properties
