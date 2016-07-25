@@ -69,8 +69,8 @@ def apiCall(lsp, ero):
         'ero': ero
     }
     
-    print ero
-    # print 'welp'
+    # print ero
+    print new_lsp, '\n'
     response = requests.put('https://10.10.2.29:8443/NorthStar/API/v1/tenant/1/topology/1/te-lsps/' + str(new_lsp['lspIndex']), 
                             json = new_lsp, headers=authHeader, verify=False)
     print response.text
@@ -117,7 +117,7 @@ def switchERO(lsp, route):
     else:
         print 'WARNING: SOMETHING WENT WRONG'
 
-    print ero, '\n'
+
     apiCall(lsp, ero)
     # ero= [ 
     #                 { 'topoObjectType': 'ipv4', 'address': '10.210.15.2'},

@@ -20,14 +20,14 @@ p = json.dumps(r.json())
 lsp_list = json.loads(p)
 # Find target LSP to use lspIndex
 for lsp in lsp_list:
-    if lsp['name'] == 'GROUP_SEVEN_NY_SF_LSP3':
+    if lsp['name'] == 'GROUP_SEVEN_SF_NY_LSP3':
         break
 
 # Fill only the required fields     
 ero= [ 
-                { 'topoObjectType': 'ipv4', 'address': '10.210.12.2'},
-                { 'topoObjectType': 'ipv4', 'address': '10.210.11.2'},
-                { 'topoObjectType': 'ipv4', 'address': '10.210.15.2'}
+                { 'topoObjectType': 'ipv4', 'address': '10.210.15.1'},
+                { 'topoObjectType': 'ipv4', 'address': '10.210.11.1'},
+                { 'topoObjectType': 'ipv4', 'address': '10.210.12.1'}
                ]
 new_lsp = {}
 for key in ('from', 'to', 'name', 'lspIndex', 'pathType'):
