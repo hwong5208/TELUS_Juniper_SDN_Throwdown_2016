@@ -34,7 +34,7 @@ def redisChannel():
 
 
 # There should be a variable called 'downedLink' that contains the links that are down
-downedLink = ['10.210.16.1', '10.210.16.2'];
+downedLink = ['10.210.17.1', '10.210.17.2'];
 
 # Start of API initializing
 url = "https://10.10.2.29:8443/oauth2/token"
@@ -86,15 +86,23 @@ def switchERO(lsp, route):
         if lspName[12:17] == 'SF_NY':
             #dosomething
             ero= [ 
-                            { 'topoObjectType': 'ipv4', 'address': '10.210.16.1'},
-                            { 'topoObjectType': 'ipv4', 'address': '10.210.17.2'}
+                            # { 'topoObjectType': 'ipv4', 'address': '10.210.16.1'},
+                            # { 'topoObjectType': 'ipv4', 'address': '10.210.17.2'}
+                            { 'topoObjectType': 'ipv4', 'address': '10.210.18.1'},
+                            { 'topoObjectType': 'ipv4', 'address': '10.210.20.1'},
+                            { 'topoObjectType': 'ipv4', 'address': '10.210.25.1'},
+                            { 'topoObjectType': 'ipv4', 'address': '10.210.26.2'}
                            ]
             print lsp['name'], route
         elif lspName[12:17] == 'NY_SF':
             #dosomething
             ero= [
-                            { 'topoObjectType': 'ipv4', 'address': '10.210.17.1'},
-                            { 'topoObjectType': 'ipv4', 'address': '10.210.16.2'}
+                            # { 'topoObjectType': 'ipv4', 'address': '10.210.17.1'},
+                            # { 'topoObjectType': 'ipv4', 'address': '10.210.16.2'}
+                            { 'topoObjectType': 'ipv4', 'address': '10.210.26.1'},
+                            { 'topoObjectType': 'ipv4', 'address': '10.210.25.2'},
+                            { 'topoObjectType': 'ipv4', 'address': '10.210.20.2'},
+                            { 'topoObjectType': 'ipv4', 'address': '10.210.18.2'}
                            ]
             print lsp['name'], route
     elif route == 'r1':

@@ -1,0 +1,1055 @@
+            "linkIndex": 1
+        },
+        {
+            "name": "L10.210.16.1_10.210.16.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.16.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.124",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.16.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.100",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 2
+        },
+        {
+            "name": "L10.210.18.1_10.210.18.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.18.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.113",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.18.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.100",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 3
+        },
+        {
+            "name": "L10.210.11.1_10.210.11.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.11.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.112",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.11.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.106",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 4
+        },
+        {
+            "name": "L10.210.13.1_10.210.13.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.13.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.124",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.13.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.106",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 5
+        },
+        {
+            "name": "L10.210.19.1_10.210.19.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.19.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.113",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.19.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.106",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 6
+        },
+        {
+            "name": "L10.210.21.1_10.210.21.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.21.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.114",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.21.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.106",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 7
+        },
+        {
+            "name": "L10.210.12.1_10.210.12.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.12.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.118",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.12.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.112",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 8
+        },
+        {
+            "name": "L10.210.14.1_10.210.14.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.14.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.124",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.14.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.112",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 9
+        },
+        {
+            "name": "L10.210.22.1_10.210.22.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.22.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.114",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.22.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.112",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 10
+        },
+        {
+            "name": "L10.210.24.1_10.210.24.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.24.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.115",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.24.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.112",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 11
+        },
+        {
+            "name": "L10.210.20.1_10.210.20.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.20.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.114",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.20.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.113",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 12
+        },
+        {
+            "name": "L10.210.25.1_10.210.25.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.25.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.115",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.25.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.114",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 13
+        },
+        {
+            "name": "L10.210.26.1_10.210.26.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.26.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.118",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000,
+                    1000000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.26.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.115",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 14
+        },
+        {
+            "name": "L10.210.17.1_10.210.17.2",
+            "endZ": {
+                "ipv4Address": {
+                    "address": "10.210.17.2",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.124",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "topoObjectType": "link",
+            "endA": {
+                "ipv4Address": {
+                    "address": "10.210.17.1",
+                    "topoObjectType": "ipv4"
+                },
+                "node": {
+                    "topologyIndex": 1,
+                    "name": "10.210.10.118",
+                    "topoObjectType": "node"
+                },
+                "unreservedBw": [
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000,
+                    900000000
+                ],
+                "TEcolor": 0,
+                "topoObjectType": "interface",
+                "bandwidth": 1000000000,
+                "TEmetric": 4,
+                "protocols": {
+                    "OSPF": {
+                        "TEMetric": 4,
+                        "area": 0
+                    },
+                    "RSVP": {
+                        "bandwidth": 1000000000
+                    }
+                }
+            },
+            "operationalStatus": "Up",
+            "topologyIndex": 1,
+            "linkIndex": 15
+        }
+    ],
+    "topoObjectType": "topology"
+}
