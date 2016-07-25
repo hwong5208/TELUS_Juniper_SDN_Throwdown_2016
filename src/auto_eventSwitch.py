@@ -15,6 +15,7 @@ import redis
 import json
 import pprint
 import requests
+requests.packages.urllib3.disable_warnings()
 
 # Initializing Redis channel
 connectedRedis = redis.StrictRedis(host='10.10.4.252', port=6379, db=0)
@@ -48,24 +49,24 @@ our_lsps = [
 
 # Route 1: From SF to NY
 r1_SF_NY = [
-    {'topoObjectType': 'ipv4', 'address': '10.210.16.1'}
+    {'topoObjectType': 'ipv4', 'address': '10.210.16.1'},
     {'topoObjectType': 'ipv4', 'address': '10.210.17.2'}
 ]
 # Route 1: From NY to SF
 r1_NY_SF = [
-    {'topoObjectType': 'ipv4', 'address': '10.210.17.2'}
+    {'topoObjectType': 'ipv4', 'address': '10.210.17.2'},
     {'topoObjectType': 'ipv4', 'address': '10.210.16.1'}
 ]
 # Route 2: From SF to NY
 r2_SF_NY = [
-    {'topoObjectType': 'ipv4', 'address': '10.210.15.1'}
-    {'topoObjectType': 'ipv4', 'address': '10.210.11.1'}
+    {'topoObjectType': 'ipv4', 'address': '10.210.15.1'},
+    {'topoObjectType': 'ipv4', 'address': '10.210.11.1'},
     {'topoObjectType': 'ipv4', 'address': '10.210.12.1'}
 ]
 # Route 2: From NY to SF
 r2_NY_SF = [
-    {'topoObjectType': 'ipv4', 'address': '10.210.12.2'}
-    {'topoObjectType': 'ipv4', 'address': '10.210.11.2'}
+    {'topoObjectType': 'ipv4', 'address': '10.210.12.2'},
+    {'topoObjectType': 'ipv4', 'address': '10.210.11.2'},
     {'topoObjectType': 'ipv4', 'address': '10.210.15.2'}
 ]
 
@@ -97,10 +98,10 @@ def link_event_json_to_ip_lists(redisStatus):
 def switchLSP(lsp, new_ero):
     new_lsp = {}
     for key in ('from', 'to', 'name', 'lspIndex', 'pathType'):
-    new_lsp[key] = lsp[key]
+        new_lsp[key] = lsp[key]
 
     new_lsp['plannedProperties'] = {
-    'ero': new_ero
+        'ero': new_ero
     }
 
     response = requests.put('https://10.10.2.29:8443/NorthStar/API/v1/tenant/1/topology/1/te-lsps/' + str(new_lsp['lspIndex']), 
@@ -121,7 +122,7 @@ def determineERO(lsp, route):
             new_ero = r1_SF_NY
         elif lspName[12:17] == 'NY_SF':
             new_ero = r1_NY_SF
-    elif route === 'r1':
+    elif route == 'r1':
         if lspName[12:17] == 'SF_NY':
             new_ero = r2_SF_NY
         elif lspName[12:17] == 'NY_SF':
