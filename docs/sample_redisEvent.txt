@@ -1,0 +1,56 @@
+link_event : {"status": "failed", "router_id": "10.210.10.106", "timestamp": "Mon:21:50:09", "interface_address": "10.210.13.1", "interface_name": "ge-1/0/4", "router_name": "dallas"}
+{u'interface_address': u'10.210.13.1',
+ u'interface_name': u'ge-1/0/4',
+ u'router_id': u'10.210.10.106',
+ u'router_name': u'dallas',
+ u'status': u'failed',
+ u'timestamp': u'Mon:21:50:09'}
+link_event : {"status": "healed", "router_id": "10.210.10.106", "timestamp": "Mon:21:55:47", "interface_address": "10.210.13.1", "interface_name": "ge-1/0/4", "router_name": "dallas"}
+{u'interface_address': u'10.210.13.1',
+ u'interface_name': u'ge-1/0/4',
+ u'router_id': u'10.210.10.106',
+ u'router_name': u'dallas',
+ u'status': u'healed',
+ u'timestamp': u'Mon:21:55:47'}
+link_event : {"status": "failed", "router_id": "10.210.10.113", "timestamp": "Mon:23:52:50", "interface_address": "10.210.19.2", "interface_name": "ge-1/0/1", "router_name": "los angeles"}
+{u'interface_address': u'10.210.19.2',
+ u'interface_name': u'ge-1/0/1',
+ u'router_id': u'10.210.10.113',
+ u'router_name': u'los angeles',
+ u'status': u'failed',
+ u'timestamp': u'Mon:23:52:50'}
+link_event : {"status": "healed", "router_id": "10.210.10.113", "timestamp": "Tue:00:00:13", "interface_address": "10.210.19.2", "interface_name": "ge-1/0/1", "router_name": "los angeles"}
+{u'interface_address': u'10.210.19.2',
+ u'interface_name': u'ge-1/0/1',
+ u'router_id': u'10.210.10.113',
+ u'router_name': u'los angeles',
+ u'status': u'healed',
+ u'timestamp': u'Tue:00:00:13'}
+link_event : {"status": "failed", "router_id": "10.210.10.114", "timestamp": "Tue:00:07:44", "interface_address": "10.210.25.1", "interface_name": "ge-1/0/3", "router_name": "houston"}
+{u'interface_address': u'10.210.25.1',
+ u'interface_name': u'ge-1/0/3',
+ u'router_id': u'10.210.10.114',
+ u'router_name': u'houston',
+ u'status': u'failed',
+ u'timestamp': u'Tue:00:07:44'}
+link_event : {"status": "healed", "router_id": "10.210.10.114", "timestamp": "Tue:00:20:54", "interface_address": "10.210.25.1", "interface_name": "ge-1/0/3", "router_name": "houston"}
+{u'interface_address': u'10.210.25.1',
+ u'interface_name': u'ge-1/0/3',
+ u'router_id': u'10.210.10.114',
+ u'router_name': u'houston',
+ u'status': u'healed',
+ u'timestamp': u'Tue:00:20:54'}
+link_event : {"status": "failed", "router_id": "10.210.10.114", "timestamp": "Tue:02:03:24", "interface_address": "10.210.22.2", "interface_name": "ge-1/0/2", "router_name": "houston"}
+{u'interface_address': u'10.210.22.2',
+ u'interface_name': u'ge-1/0/2',
+ u'router_id': u'10.210.10.114',
+ u'router_name': u'houston',
+ u'status': u'failed',
+ u'timestamp': u'Tue:02:03:24'}
+link_event : {"status": "healed", "router_id": "10.210.10.114", "timestamp": "Tue:02:06:09", "interface_address": "10.210.22.2", "interface_name": "ge-1/0/2", "router_name": "houston"}
+{u'interface_address': u'10.210.22.2',
+ u'interface_name': u'ge-1/0/2',
+ u'router_id': u'10.210.10.114',
+ u'router_name': u'houston',
+ u'status': u'healed',
+ u'timestamp': u'Tue:02:06:09'}
