@@ -45,7 +45,6 @@ our_lsps = [
 
 # Routes to switch to, dependant on direction
 # Currently statically defined
-# TODO: Remove this and implement a dynamic way of determining routes
 
 # Route 1: From SF to NY
 r1_SF_NY = [
@@ -74,7 +73,7 @@ r2_NY_SF = [
 # (without terminating octet)
 
 r1 = ['10.210.16','10.210.17']
-r1 = ['10.210.15','10.210.11','10.210.12']
+r2 = ['10.210.15','10.210.11','10.210.12']
 
 ###########################################################
 
@@ -82,7 +81,7 @@ r1 = ['10.210.15','10.210.11','10.210.12']
 # @Returns an ListOfString which represent the IPAddresses of the Failled links
 def link_event_json_to_ip_lists(redisStatus):
     data = json.loads(redisStatus)
-
+    failedaddresses = []
     if data["status"]=="failed":
         sourceipaddress = data["interface_address"]
         if sourceipaddress[-1:] == "1":
@@ -91,8 +90,7 @@ def link_event_json_to_ip_lists(redisStatus):
             destinationipaddress = sourceipaddress[0:10]+"1"
 
         failedaddresses = [sourceipaddress, destinationipaddress]
-        return failedaddresses
-    return
+    return failedaddresses
 
 # Calls the API to switch the LSP to the new_ero
 def switchLSP(lsp, new_ero):
@@ -116,7 +114,7 @@ def determineERO(lsp, route):
 
     # Check which route it matches
     # STATIC allocation
-    # TODO: Make ero construction dynamic
+    # TODO: Make ero construction more robust and allows for more than just two routes
     if route == 'r2':
         if lspName[12:17] == 'SF_NY':
             new_ero = r1_SF_NY
@@ -161,7 +159,11 @@ def redisListener():
         print item['channel'], ":", item['data']
         if isinstance(item['data'], basestring):
             d = json.loads(item['data'])
-            failedaddresses = link_event_json_to_ip_lists(d)
+            # pprint.pprint(d, width=1)
+            print 'Found event, switching LSP'
+            failedaddresses = []
+            # failedaddresses = link_event_json_to_ip_lists(d)
+            failedaddresses = link_event_json_to_ip_lists(item['data'])
             check_lsp(failedaddresses)
 
 
