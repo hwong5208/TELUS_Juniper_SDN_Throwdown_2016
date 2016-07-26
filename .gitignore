@@ -1,0 +1,9 @@
+.idea/
+bak/
+sample/
+notes/
+Original Examples/
+depreciated/
+docs/
+data/
+*.pyc
