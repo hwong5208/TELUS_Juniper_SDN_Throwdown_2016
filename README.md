@@ -2,6 +2,7 @@
 Telus Throwdown 2016
 
   This script is a project that was presented at the Telus Throwdown 2016 at the Telus Garden.
+  This event started on Wednesday July 20th to Tuesday July 26th.
   
   This project utlizes:
     NorthStar API provided by Junpier, allowing for centralized control for LSPs.
