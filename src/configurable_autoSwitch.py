@@ -11,6 +11,8 @@ Created on July 23, 2016
 
 Thanks to azaringh for his example and templates
 '''
+
+# Intial Imports
 import redis
 import json
 import pprint
@@ -34,20 +36,6 @@ DEBUG = False
 
 # Testing (if True, disables redisListener and allows for test inputs)
 TESTING = False
-
-# Initializing Redis channel
-connectedRedis = redis.StrictRedis(host= redisIP, port=6379, db=0)
-pubsub = connectedRedis.pubsub()
-pubsub.subscribe('link_event')
-
-# Start of API initializing
-url = "https://" + northStarIP + ":"+ northStarPort +"/oauth2/token"
-
-# Token Authentication
-payload = {'grant_type': 'password', 'username': authUser, 'password': authPass}
-response = requests.post (url, data=payload, auth=(authUser,authPass), verify=False)
-json_data = json.loads(response.text)
-authHeader= {"Authorization":"{token_type} {access_token}".format(**json_data)}
 
 # GROUP_SEVEN LSP Declarations
 # Modify this to determing which LSPs are controlled by this script
@@ -94,6 +82,20 @@ r2 = ['10.210.15','10.210.11','10.210.12']
 
 ###########################################################
 
+# Initializing Redis channel
+connectedRedis = redis.StrictRedis(host= redisIP, port=6379, db=0)
+pubsub = connectedRedis.pubsub()
+pubsub.subscribe('link_event')
+
+# Start of API initializing
+url = "https://" + northStarIP + ":"+ northStarPort +"/oauth2/token"
+
+# Token Authentication
+payload = {'grant_type': 'password', 'username': authUser, 'password': authPass}
+response = requests.post (url, data=payload, auth=(authUser,authPass), verify=False)
+json_data = json.loads(response.text)
+authHeader= {"Authorization":"{token_type} {access_token}".format(**json_data)}
+
 # @Consumes a redis announcement from channel 'link_event'
 # @Returns an ListOfString which represent the IPAddresses of the Failed links
 def link_event_json_to_ip_lists(redisStatus):
@@ -124,6 +126,7 @@ def switchLSP(lsp, new_ero):
 
     response = requests.put('https://'+ northStarIP +':'+ northStarPort +'/NorthStar/API/v1/tenant/1/topology/1/te-lsps/' + str(new_lsp['lspIndex']), 
                         json = new_lsp, headers=authHeader, verify=False)
+
     if DEBUG:
         print response.text
 
@@ -206,7 +209,7 @@ if not TESTING:
 
 if TESTING:
     # Redis Sample Input
-    sampleRedisOutput = '{"status": "failed", "router_id": "10.210.10.106", "timestamp": "Mon:21:50:09", "interface_address": "10.210.17.1", "interface_name": "ge-1/0/4", "router_name": "dallas"}'
+    sampleRedisOutput = '{"status": "failed", "router_id": "10.210.10.106", "timestamp": "Mon:21:50:09", "interface_address": "10.210.16.1", "interface_name": "ge-1/0/4", "router_name": "dallas"}'
     
     
     def debug(debugInput):

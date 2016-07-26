@@ -11,6 +11,7 @@ Created on July 23, 2016
 
 Thanks to azaringh for his example and templates
 '''
+# Intital Imports
 import redis
 import json
 import pprint
@@ -171,4 +172,5 @@ def redisListener():
 redisListener()
 
 # <<DEBUG>>
-print 'Why did I get here?'
+if DEBUG:
+    print 'ERROR: Script should not have ended here.'
