@@ -32,6 +32,9 @@ northStarPort = '8443'
 
 DEBUG = False
 
+# Testing (if True, disables redisListener and allows for test inputs)
+TESTING = False
+
 # Initializing Redis channel
 connectedRedis = redis.StrictRedis(host= redisIP, port=6379, db=0)
 pubsub = connectedRedis.pubsub()
@@ -92,7 +95,7 @@ r2 = ['10.210.15','10.210.11','10.210.12']
 ###########################################################
 
 # @Consumes a redis announcement from channel 'link_event'
-# @Returns an ListOfString which represent the IPAddresses of the Failled links
+# @Returns an ListOfString which represent the IPAddresses of the Failed links
 def link_event_json_to_ip_lists(redisStatus):
     data = json.loads(redisStatus)
     failedaddresses = []
@@ -106,7 +109,7 @@ def link_event_json_to_ip_lists(redisStatus):
         failedaddresses = [sourceipaddress, destinationipaddress]
     # Debugging Verbose print
     if DEBUG and data['status']=="failed":
-        print "Retrieved failled addresses from RedisOuput", failedaddresses
+        print "Retrieved failed addresses from RedisOuput", failedaddresses
     return failedaddresses
 
 # Calls the API to switch the LSP to the new_ero
@@ -144,7 +147,7 @@ def determineERO(lsp, route):
         elif lspName[12:17] == 'NY_SF':
             new_ero = r2_NY_SF
 
-    print 'switching from ', route
+    print lsp['name'], 'is switching from ', route
     switchLSP(lsp, new_ero)
 
 
@@ -159,19 +162,25 @@ def check_lsp(failedAddresses):
         if lsp['name'] in our_lsps:
             currentEro = lsp['liveProperties']['ero']
             currentRoute = 0 # Initializing to NULL
+
+            if DEBUG:
+                print "Currently on ", lsp['name'], " checking to see if switch needed"
+
             for adr in currentEro:
                 address = adr['address']
+                if DEBUG:
+                    print address
                 if address[:-2] in r1:
                     currentRoute = 'r1'
                 elif address[:-2] in r2:
-                    route = 'r2'
+                    currentRoute = 'r2'
                 else:
-                    route = 'error'
+                    currentRoute = 'error'
                 for failedAddress in failedAddresses:
-                    if failedAddresses == address:
-                        if DEGUG:
-                            print "Found an LSP to switch! Name: ", lsp['name'], " and Route: ", route
-                        determineERO(lsp, route)
+                    if failedAddress == address:
+                        if DEBUG:
+                            print "Found an LSP to switch! Name: ", lsp['name'], " and Route: ", currentRoute
+                        determineERO(lsp, currentRoute)
 
 def redisListener():
     for item in pubsub.listen():
@@ -187,20 +196,23 @@ def redisListener():
             check_lsp(failedaddresses)
 
 
-
-# redisListener()
+if not TESTING:
+    redisListener()
 
 
 
 
 #########################################################
 
-
-sampleRedisOutput = {"status": "failed", "router_id": "10.210.10.106", 
-                    "timestamp": "Mon:21:50:09", "interface_address": "10.210.13.1", 
-                    "interface_name": "ge-1/0/4", "router_name": "dallas"}
-
-
-def debug(debugInput):
-    failedaddresses = link_event_json_to_ip_lists(debugInput)
-    check_lsp(failedaddresses)
+if TESTING:
+    # Redis Sample Input
+    sampleRedisOutput = '{"status": "failed", "router_id": "10.210.10.106", "timestamp": "Mon:21:50:09", "interface_address": "10.210.17.1", "interface_name": "ge-1/0/4", "router_name": "dallas"}'
+    
+    
+    def debug(debugInput):
+        failedaddresses = []
+        failedaddresses = link_event_json_to_ip_lists(debugInput)
+        print 'failedddresses = ', failedaddresses
+        check_lsp(failedaddresses)
+    
+    debug(sampleRedisOutput)
