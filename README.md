@@ -13,10 +13,10 @@ Telus Throwdown 2016
     
   Main features:
     Automated Switching of LSP
-      - LSP routes change automatically on detection of Link Faliure that affects the LSP.
+      * LSP routes change automatically on detection of Link Faliure that affects the LSP.
     Redis Event Subscription
-      - Active notifcation of link failures.
+      * Active notifcation of link failures.
     Static path
-      - Allows for low resource and quick switching of LSPs, as it is not dependant on the server finishing a calculation.
+      * Allows for low resource and quick switching of LSPs, as it is not dependant on the server finishing a calculation.
     Ease of configurability
-      - All configurations needed to deploy tool is placed at the top of the file.
+      * All configurations needed to deploy tool is placed at the top of the file.
