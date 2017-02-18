@@ -12,11 +12,11 @@ Telus Throwdown 2016
     It contains a configurable configuration that is easily changed using the static variables placed at the top of the file.
     
   Main features:
-    Automated Switching of LSP
-      * LSP routes change automatically on detection of Link Faliure that affects the LSP.
-    Redis Event Subscription
-      * Active notifcation of link failures.
-    Static path
-      * Allows for low resource and quick switching of LSPs, as it is not dependant on the server finishing a calculation.
-    Ease of configurability
-      * All configurations needed to deploy tool is placed at the top of the file.
+* Automated Switching of LSP
+  * LSP routes change automatically on detection of Link Faliure that affects the LSP.
+* Redis Event Subscription
+  * Active notifcation of link failures.
+* Static path
+  * Allows for low resource and quick switching of LSPs, as it is not dependant on the server finishing a calculation.
+* Ease of configurability
+  * All configurations needed to deploy tool is placed at the top of the file.
